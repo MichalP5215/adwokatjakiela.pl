@@ -1,0 +1,321 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    color: #7fc241;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* heading size */
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+/* colors */
+
+.white {
+    color: #fff;
+}
+
+.green {
+    color: #7fc241;
+}
+
+.dark-gray {
+    color: #000;
+}
+
+.dark {
+    background-color: #000;
+}
+
+
+/* uppercase */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+
+/* selection size, color */
+
+.section-p {
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 40px;
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+.section-title+.row {
+    padding: 40px 0 90px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: #7fc241;
+    padding: 10px 0;
+}
+
+
+/* container padding */
+
+.containerPadding-top-40 {
+    padding-top: 40px;
+}
+
+.containerPadding-top-60 {
+    padding-top: 60px;
+}
+
+.containerPadding-bottom-70 {
+    padding-bottom: 70px;
+}
+
+.containerPadding-bottom-60 {
+    padding-bottom: 60px;
+}
+
+.containerPadding-bottom-50 {
+    padding-bottom: 50px;
+}
+
+.containerPadding-bottom-40 {
+    padding-bottom: 40px;
+}
+
+.containerPadding-bottom-30 {
+    padding-bottom: 30px;
+}
+
+.containerPadding-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.containerMarginTop10 {
+    margin-top: 10px;
+}
+
+.containerMarginTop20 {
+    margin-top: 20px;
+}
+
+.containerMarginTop30 {
+    margin-top: 30px;
+}
+
+.containerMarginLeft10 {
+    margin-left: 10px;
+}
+
+.containerMarginTop50icon {
+    margin-top: 0px;
+}
+
+@media (max-width: 480px) {
+    .containerMarginTop50icon {
+        margin-top: 50px;
+    }
+}
+
+#mainNav {
+    background: rgba(48, 56, 69, 0.7);
+}
+
+#mainNav.navbar-shrink {
+    background: rgba(48, 56, 69, 1.0);
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link,
+#mainNav .navbar-nav>li.nav-item>a.nav-link :focus {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
+    color: #7fc241;
+}
+
+#mainNav .fa-envelope,
+#mainNav .fa-facebook-square,
+#mainNav .fa-phone-square,
+#mainNav .fa-times {
+    color: #7fc241;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#mainNav .icon_menu .fa-envelope,
+#mainNav .icon_menu .fa-facebook-square,
+#mainNav .icon_menu .fa-phone-square {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    #mainNav .fa-envelope,
+    #mainNav .fa-facebook-square,
+    #mainNav .fa-phone-square {
+        font-size: 25px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 580px) {
+    #mainNav .fa-envelope,
+    #mainNav .fa-facebook-square,
+    #mainNav .fa-phone-square {
+        font-size: 20px;
+        padding: 2px;
+    }
+}
+
+@media (max-width: 455px) {
+    #mainNav .fa-envelope,
+    #mainNav .fa-facebook-square,
+    #mainNav .fa-phone-square {
+        display: none;
+    }
+    #mainNav .logo {
+        transform: scale(1.3);
+        margin-top: -5px;
+    }
+    #mainNav .icon_menu .fa-envelope,
+    #mainNav .icon_menu .fa-facebook-square,
+    #mainNav .icon_menu .fa-phone-square {
+        display: inline-block;
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    #mainNav .fa-envelope,
+    #mainNav .fa-facebook-square,
+    #mainNav .fa-phone-square {
+        display: none;
+    }
+    #mainNav .logo {
+        transform: scale(1.5);
+        margin-top: -10px;
+    }
+    #mainNav .icon_menu .fa-envelope,
+    #mainNav .icon_menu .fa-facebook-square,
+    #mainNav .icon_menu .fa-phone-square {
+        display: inline-block;
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+@media (max-height: 480px) {
+    #mainNav {
+        height: 20%;
+    }
+}
+
+
+/* menu 1 o nas */
+
+
+/*! menu2 - co oferujemy */
+
+
+/*! menu3 - nasze atuty */
+
+
+/* menu4 - efekty naszej pracy */
+
+
+/* menu5 - galleria */
+
+
+/* menu6 - kontakt */
+
+
+/* footer */
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .section {
+        padding: 30px 0;
+    }
+}
